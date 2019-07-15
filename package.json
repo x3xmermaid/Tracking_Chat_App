@@ -9,6 +9,7 @@
     "postinstall": "jetify"
   },
   "dependencies": {
+    "firebase": "^6.3.0",
     "hoist-non-react-statics": "^3.3.0",
     "jetifier": "^1.6.3",
     "react": "16.8.6",
