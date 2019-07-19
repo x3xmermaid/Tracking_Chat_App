@@ -4,6 +4,12 @@ import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
 import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
+import com.airbnb.android.react.maps.MapsPackage;
+import java.util.List;
+import java.util.Arrays;
+import com.facebook.react.shell.MainReactPackage;
+import com.facebook.react.ReactPackage;
+import com.reactnativecommunity.geolocation.GeolocationPackage;
 
 public class MainActivity extends ReactActivity {
 
@@ -24,4 +30,19 @@ public class MainActivity extends ReactActivity {
       }
     };
   }
+
+    protected List<ReactPackage> getPackages() {
+        return Arrays.<ReactPackage>asList(
+                new MainReactPackage(),
+                new MapsPackage(),
+                new GeolocationPackage()
+        );
+    }
+
+    // @Override
+    // protected List<ReactPackage> getPackages() {
+    //  return Arrays.asList(
+            
+    // );
+// }
 }
